@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Crazy-Java.iml" filepath="$PROJECT_DIR$/Crazy-Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GeekTimeExercise/GeekTimeExercise.iml" filepath="$PROJECT_DIR$/GeekTimeExercise/GeekTimeExercise.iml" />
+    </modules>
+  </component>
+</project>
