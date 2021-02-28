@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Crazy-Java.iml" filepath="$PROJECT_DIR$/Crazy-Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Crazy-Java/Crazy-Java.iml" filepath="$PROJECT_DIR$/Crazy-Java/Crazy-Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EffectiveJava/EffectiveJava.iml" filepath="$PROJECT_DIR$/EffectiveJava/EffectiveJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/GeekTimeExercise/GeekTimeExercise.iml" filepath="$PROJECT_DIR$/GeekTimeExercise/GeekTimeExercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java-study.iml" filepath="$PROJECT_DIR$/Java-study.iml" />
     </modules>
   </component>
 </project>

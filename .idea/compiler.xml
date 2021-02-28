@@ -7,11 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="GeekTimeExercise" />
+        <module name="EffectiveJava" />
+        <module name="Crazy-Java" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11">
       <module name="Crazy-Java" target="1.5" />
-      <module name="GeekTimeExercise" target="1.5" />
+      <module name="EffectiveJava" target="1.5" />
+      <module name="GeekTimeExercise" target="11" />
+      <module name="Java-study" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
