@@ -1,0 +1,13 @@
+
+c
+java:S2095"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(¶÷š§
+1
+java:S3626"Remove this redundant jump.(ûÁÝ…
+M
+java:S1854"7Remove this useless assignment to local variable "fis".(¶÷š§
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ÎÃ½Ú
+S	java:S106"9Replace this use of System.out or System.err by a logger.(©þêÜúÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(Ã²ñó
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÓâŸéúÿÿÿÿ
+>
+java:S1481"(Remove this unused "fis" local variable.(…Üê¦

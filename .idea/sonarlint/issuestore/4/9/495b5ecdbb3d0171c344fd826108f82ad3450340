@@ -1,0 +1,12 @@
+
+m	java:S117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õ¯»í8£ŸÏ¾þ.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(®ýáëûÿÿÿÿ8Ü‰Ë¾þ.
+j	java:S119
+"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(ùíðãúÿÿÿÿ8Ü‰Ë¾þ.
+\
+java:S1854%":Remove this useless assignment to local variable "result".(¨„ß©ýÿÿÿÿ8£ŸÏ¾þ.
+M
+java:S1481%"+Remove this unused "result" local variable.(¨„ß©ýÿÿÿÿ8£ŸÏ¾þ.
+F
+java:S2326
+"$futureTask is not used in the class.(ùíðãúÿÿÿÿ8Ü‰Ë¾þ.

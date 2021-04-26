@@ -1,0 +1,11 @@
+
+d
+java:S2095"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(ÙŸ—¡
+R
+java:S1128"7Remove this unused import 'javax.sound.midi.Soundbank'.(µÊøÿÿÿÿ
+U
+java:S1128":Remove this unused import 'java.io.FileNotFoundException'.(·î™ùÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(²‘şûÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÈøÅ¶øÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Î«šÕ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(óè™Œÿÿÿÿÿ

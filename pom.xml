@@ -12,6 +12,7 @@
         <module>EffectiveJava</module>
         <module>GeekTimeExercise</module>
         <module>GeekTimeExercise</module>
+        <module>WorkTest</module>
     </modules>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->

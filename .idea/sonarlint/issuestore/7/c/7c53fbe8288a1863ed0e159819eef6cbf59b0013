@@ -1,0 +1,15 @@
+
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Î˜á˜
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ê¦®
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦éÇª
+e
+java:S1854"JRemove this useless assignment to local variable "testImmutableClassList".(ÕÙšğüÿÿÿÿ
+V
+java:S1481";Remove this unused "testImmutableClassList" local variable.(ÕÙšğüÿÿÿÿ
+A
+java:S1068
+"&Remove this unused "id" private field.(ÎÂ’„ÿÿÿÿÿ
+>
+java:S1068"(Remove this unused "type" private field.(Ä³œ
+C
+java:S1068"(Remove this unused "date" private field.(™Ã¬²ıÿÿÿÿ
