@@ -13,6 +13,8 @@
         <module>GeekTimeExercise</module>
         <module>GeekTimeExercise</module>
         <module>WorkTest</module>
+        <module>ThinkInJava</module>
+        <module>JVMExercise</module>
     </modules>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->

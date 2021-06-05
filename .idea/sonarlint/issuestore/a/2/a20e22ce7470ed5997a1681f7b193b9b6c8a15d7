@@ -1,0 +1,22 @@
+
+U
+java:S3400"9Remove this method and declare a constant for this value.(…Ρ78ηθ•†›/
+
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Εωπ‘8ηθ•†›/
+W
+java:S1161":Add the "@Override" annotation above this method signature(Ϊ§Μ‘8ηθ•†›/
+
+java:S1186+"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Εωπ‘8ηθ•†›/
+W
+java:S1161'":Add the "@Override" annotation above this method signature(Ϊ§Μ‘8ηθ•†›/
+
+java:S11868"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Εωπ‘8ηθ•†›/
+W
+java:S11614":Add the "@Override" annotation above this method signature(Ϊ§Μ‘8ηθ•†›/
+W
+java:S1161A":Add the "@Override" annotation above this method signature(Εωπ‘8ηθ•†›/
+W
+java:S1161K":Add the "@Override" annotation above this method signature(Ϊ§Μ‘8ηθ•†›/
+B
+java:S1068
+"%Remove this unused "i" private field.(ξƒήά8ηθ•†›/

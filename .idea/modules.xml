@@ -5,7 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/Crazy-Java/Crazy-Java.iml" filepath="$PROJECT_DIR$/Crazy-Java/Crazy-Java.iml" />
       <module fileurl="file://$PROJECT_DIR$/EffectiveJava/EffectiveJava.iml" filepath="$PROJECT_DIR$/EffectiveJava/EffectiveJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/GeekTimeExercise/GeekTimeExercise.iml" filepath="$PROJECT_DIR$/GeekTimeExercise/GeekTimeExercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JVMExercise/JVMExercise.iml" filepath="$PROJECT_DIR$/JVMExercise/JVMExercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java-study.iml" filepath="$PROJECT_DIR$/Java-study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThinkInJava/ThinkInJava.iml" filepath="$PROJECT_DIR$/ThinkInJava/ThinkInJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/WorkTest/WorkTest.iml" filepath="$PROJECT_DIR$/WorkTest/WorkTest.iml" />
     </modules>
   </component>

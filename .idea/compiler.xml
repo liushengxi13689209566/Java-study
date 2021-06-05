@@ -2,22 +2,27 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="GeekTimeExercise" />
+        <module name="ThinkInJava" />
+        <module name="JVMExercise" />
         <module name="EffectiveJava" />
         <module name="Crazy-Java" />
         <module name="WorkTest" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11">
-      <module name="Crazy-Java" target="1.5" />
-      <module name="EffectiveJava" target="1.5" />
+      <module name="Crazy-Java" target="11" />
+      <module name="EffectiveJava" target="11" />
       <module name="GeekTimeExercise" target="11" />
-      <module name="Java-study" target="1.5" />
-      <module name="WorkTest" target="1.5" />
+      <module name="Java-study" target="11" />
+      <module name="JVMExercise" target="11" />
+      <module name="ThinkInJava" target="11" />
+      <module name="WorkTest" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
