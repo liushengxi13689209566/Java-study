@@ -1,10 +1,10 @@
 
 U	java:S106"9Replace this use of System.out or System.err by a logger.(Ÿ·şë8åÛôµ/
+b	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(éŒê·
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ç¡ûƒ
 O
 java:S1905"-Remove this unnecessary cast to "ByteBuffer".(ç¬•Òÿÿÿÿÿ8åÛôµ/
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ç¡ûƒ
 s
 java:S2095"QUse try-with-resources or close this "ServerSocketChannel" in a "finally" clause.(ºæ´şÿÿÿÿ8šÒÑä/
 D
 java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8åÛôµ/
-b	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(éŒê·

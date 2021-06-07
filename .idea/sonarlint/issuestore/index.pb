@@ -193,3 +193,15 @@ MThinkInJava/src/main/java/com/tattoo/interfaces/interfaceprocessor/Apply.java,
 WThinkInJava/src/main/java/com/tattoo/interfaces/interfaceprocessor/StringProcessor.java,a/7/a71d6f3af5d9f91a1965d7752f310ba5bc68fd23
 ‡
 WThinkInJava/src/main/java/com/tattoo/interfaces/interfaceprocessor/FilterProcessor.java,3/2/328e7727e11552db0a38482c6cc8fda93219bbe6
+C
+JVMExercise/pom.xml,1/c/1c6d9127b04e6625c30a46f63a7ccbf90af62fb6
+e
+5JVMExercise/src/main/java/RuntimeConstantPoolOOM.java,a/a/aac9bf00b84f9e0c2d9c9ab6104123c1002b97c5
+]
+-JVMExercise/src/main/java/JavaVMStackSOF.java,a/d/ad43d668b67d5c8a2534bfb9d7341a9701f42d51
+]
+-JVMExercise/src/main/java/JavaVMStackOOM.java,d/a/dab553ce276e52d1b301110fc6a582a3f27582f3
+V
+&JVMExercise/src/main/java/HeapOOM.java,8/c/8cba19dc132b6dcd97ca73e20f70369f674b7b95
+b
+2JVMExercise/src/main/java/ReferenceCountingGC.java,1/b/1b75cc1f27eea885cf497512f1a0fdd9cd8f6c2d

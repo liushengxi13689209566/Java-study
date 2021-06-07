@@ -1,0 +1,9 @@
+
+X	java:S125
+"<This block of commented-out lines of code should be removed.(ïíëÚ8øÓÙÙ/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(§êşÁ8Ş¡ÙÙ/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(³“Ô•8Ş¡ÙÙ/
+V
+java:S4973"9Use the "equals" method if value comparison was intended.(³“Ô•8Ş¡ÙÙ/
+V
+java:S4973"9Use the "equals" method if value comparison was intended.(§êşÁ8Ş¡ÙÙ/
