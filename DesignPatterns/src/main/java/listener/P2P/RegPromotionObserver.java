@@ -1,4 +1,4 @@
-package listener.scene1;
+package listener.P2P;
 
 public class RegPromotionObserver implements RegObserver {
     @Override

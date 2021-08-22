@@ -15,6 +15,7 @@ public class UserController {
         metricsCollector.recordRequest(requestInfo);
 
         //...返回UserVo数据...
+        return null;
     }
 
     public UserVo register(String telephone, String password) {
@@ -28,5 +29,6 @@ public class UserController {
         metricsCollector.recordRequest(requestInfo);
 
         //...返回UserVo数据...
+        return null;
     }
 }

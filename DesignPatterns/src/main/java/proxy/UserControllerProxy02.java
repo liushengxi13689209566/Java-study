@@ -1,6 +1,6 @@
 package proxy;
 
-public class UserControllerProxy extends UserController {
+class UserControllerProxy extends UserController {
     private MetricsCollector metricsCollector;
 
     public UserControllerProxy() {
