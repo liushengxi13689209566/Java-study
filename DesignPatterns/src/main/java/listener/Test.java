@@ -6,6 +6,7 @@ import com.google.common.eventbus.Subscribe;
 public class Test {
 
     public static void main(String[] args) {
+
         EventBus bus = new EventBus();
         bus.register(new MyLisenter());
         bus.post(new MyEvent("test"));

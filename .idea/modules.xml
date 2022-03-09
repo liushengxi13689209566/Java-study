@@ -8,8 +8,11 @@
       <module fileurl="file://$PROJECT_DIR$/GeekTimeExercise/GeekTimeExercise.iml" filepath="$PROJECT_DIR$/GeekTimeExercise/GeekTimeExercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/JVMExercise/JVMExercise.iml" filepath="$PROJECT_DIR$/JVMExercise/JVMExercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java-study.iml" filepath="$PROJECT_DIR$/Java-study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringStudy/SpringStudy.iml" filepath="$PROJECT_DIR$/SpringStudy/SpringStudy.iml" />
       <module fileurl="file://$PROJECT_DIR$/ThinkInJava/ThinkInJava.iml" filepath="$PROJECT_DIR$/ThinkInJava/ThinkInJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/WorkTest/WorkTest.iml" filepath="$PROJECT_DIR$/WorkTest/WorkTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algorithm/algorithm.iml" filepath="$PROJECT_DIR$/algorithm/algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/concurrent/concurrent.iml" filepath="$PROJECT_DIR$/concurrent/concurrent.iml" />
     </modules>
   </component>
 </project>

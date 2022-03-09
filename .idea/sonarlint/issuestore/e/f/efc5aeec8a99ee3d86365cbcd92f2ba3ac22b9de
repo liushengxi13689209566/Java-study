@@ -1,0 +1,9 @@
+
+E
+java:S1144"(Remove this unused private "fun" method.(¥ÓÌö8¨ìâí/
+
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¦›¼8ÁÅòâí/
+T	java:S106
+"9Replace this use of System.out or System.err by a logger.(Ê¿ÒQ8·„ğâí/
+N
+java:S1172"1Remove this unused method parameter "testObject".(¦›¼8ìäôâí/

@@ -1,0 +1,10 @@
+
+i	java:S101
+"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¢Ñ¢°8Üµ©¯ô/
+C
+java:S1168"&Return an empty array instead of null.(¥¹ï8Üµ©¯ô/
+_
+java:S2094
+"BRemove this empty class, write its code or make it an "interface".(¢Ñ¢°8Üµ©¯ô/
+{
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ËçÛıÿÿÿÿ8Üµ©¯ô/

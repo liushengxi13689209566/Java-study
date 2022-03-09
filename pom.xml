@@ -16,6 +16,9 @@
         <module>ThinkInJava</module>
         <module>JVMExercise</module>
         <module>DesignPatterns</module>
+        <module>SpringStudy</module>
+        <module>concurrent</module>
+        <module>algorithm</module>
     </modules>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
