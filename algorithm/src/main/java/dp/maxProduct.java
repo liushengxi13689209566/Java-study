@@ -37,43 +37,4 @@ public class maxProduct {
             return maxRes;
         }
     }
-
-
-    class Solution {
-        private int threeMax(int a, int b, int c) {
-            int tmp = Math.max(a, b);
-            return tmp > c ? tmp : c;
-        }
-
-        private int threeMin(int a, int b, int c) {
-            int tmp = Math.min(a, b);
-            return tmp < c ? tmp : c;
-        }
-
-        public int maxProduct(int[] nums) {
-            if (nums == null) {
-                return 0;
-            }
-            int maxRes = nums[0];
-            // 二维数组：因为可能存在 -2 ,3,3,3,3,-9  的情况
-            //正的最大值
-            int[] positiveMax = new int[nums.length];
-            //负的最大值
-            int[] negativeMax = new int[nums.length];
-
-            positiveMax[0] = nums[0];
-            negativeMax[0] = nums[0];
-
-            for (int i = 1; i < nums.length; i++) {
-                int x = positiveMax[i - 1] * nums[i];
-                int y = negativeMax[i - 1] * nums[i];
-                positiveMax[i] = this.threeMax(x, y, nums[i]);
-                negativeMax[i] = this.threeMin(x, y, nums[i]);
-                maxRes = positiveMax[i] > maxRes ? positiveMax[i] : maxRes;
-            }
-            return maxRes;
-        }
-    }
-
-
 }

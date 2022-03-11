@@ -21,7 +21,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="11">
       <module name="algorithm" target="8" />
-      <module name="concurrent" target="6" />
+      <module name="concurrent" target="8" />
       <module name="Crazy-Java" target="1.5" />
       <module name="DesignPatterns" target="7" />
       <module name="EffectiveJava" target="1.5" />
