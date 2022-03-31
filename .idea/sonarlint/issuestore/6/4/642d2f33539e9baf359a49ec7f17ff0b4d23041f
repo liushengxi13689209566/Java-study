@@ -1,9 +1,9 @@
 
-{
-java:S1488."^Immediately return this expression instead of assigning it to the temporary variable "result".(ÜÆšï8Æ…ÓÃë/
-U	java:S106""9Replace this use of System.out or System.err by a logger.(Úàñõ8Æ…ÓÃë/
-Z	java:S1067"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ8Æ…ÓÃë/
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(‡¡¾¸úÿÿÿÿ8Æ…ÓÃë/
-{
-java:S1488A"^Immediately return this expression instead of assigning it to the temporary variable "result".(É­‹‰8Æ…ÓÃë/
-Z	java:S106G"9Replace this use of System.out or System.err by a logger.(‘Şî½üÿÿÿÿ8Æ…ÓÃë/
+y
+java:S1488"^Immediately return this expression instead of assigning it to the temporary variable "result".(ÜÆšï8Æ…ÓÃë/
+X	java:S106"9Replace this use of System.out or System.err by a logger.(‘Şî½üÿÿÿÿ8Æ…ÓÃë/
+X	java:S106"9Replace this use of System.out or System.err by a logger.(‡¡¾¸úÿÿÿÿ8Æ…ÓÃë/
+y
+java:S1488"^Immediately return this expression instead of assigning it to the temporary variable "result".(É­‹‰8Æ…ÓÃë/
+X	java:S106"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ8Æ…ÓÃë/
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Úàñõ8Æ…ÓÃë/

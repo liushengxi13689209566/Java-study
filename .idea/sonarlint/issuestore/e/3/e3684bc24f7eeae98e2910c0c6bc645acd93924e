@@ -1,0 +1,10 @@
+
+g
+java:S2175%"EA "Map<Long, BackendServer>" cannot contain a "int" in a "Long" type.(Ö‚ûúÿÿÿÿ8şÉşÉö/
+M
+java:S1068"1Remove this unused "serverAddress" private field.(¸Á„8÷ÒıÉö/
+N
+java:S1068",Remove this unused "serverNo" private field.(÷ÉÇ¸ûÿÿÿÿ8÷ÒıÉö/
+;
+java:S2119#"Save and re-use this "Random".(¡Å”¦8÷ÒıÉö/
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.( ×”Ñ

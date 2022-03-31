@@ -1,0 +1,10 @@
+
+H
+java:S1172"+Remove this unused method parameter "args".(Ξ½Ίπ8Γ£σσ/
+C
+java:S1481"&Remove this unused "a" local variable.(—±ϋΘ8Γ£σσ/
+R
+java:S1854"5Remove this useless assignment to local variable "a".(—±ϋΘ8Γ£σσ/
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Òύ°•
+£
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(©„ί©ψÿÿÿÿ8ρσ΅σσ/

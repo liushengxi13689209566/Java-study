@@ -1,0 +1,34 @@
+
+B
+java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8½ªÀôö/
+F
+java:S1144"+Remove this unused private "printB" method.(°¬¡ò8¿‚ÿóö/
+J
+java:S5411"*Use the primitive boolean expression here.(ıü‡Ìûÿÿÿÿ8õ–œõö/
+œ
+java:S1130"€Remove the declaration of thrown exception 'java.util.concurrent.ExecutionException', as it cannot be thrown from method's body.(­Ëê8¸©¾ôö/
+R	java:S106"9Replace this use of System.out or System.err by a logger.(ÜÄ™g8¿‚ÿóö/
+œ
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(°¬¡ò8¿‚ÿóö/
+R	java:S106"9Replace this use of System.out or System.err by a logger.(ÜÄ™g8¿Ãõö/
+J
+java:S5411"*Use the primitive boolean expression here.(´Ñë§şÿÿÿÿ8à”õö/
+[	java:S125"<This block of commented-out lines of code should be removed.(°±úÿÿÿÿ8ıæ©õö/
+k
+java:S1104"PMake flag a static final constant or non-public and provide accessors if needed.(±ßÍé8ğÛ’õö/
+F
+java:S1144"+Remove this unused private "printA" method.(Û‹ƒê8¿‚ÿóö/
+œ
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Û‹ƒê8¿‚ÿóö/
+K
+java:S2446"0"notify" may not wake up the appropriate thread.(ŒâÌ†8¿Ãõö/
+B
+java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8™ş¿ôö/
+’
+java:S1130"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(­Ëê8¸©¾ôö/
+E
+java:S1444"*Make this "public static flag" field final(±ßÍé8ğÛ’õö/
+X	java:S106"9Replace this use of System.out or System.err by a logger.(‘Ô¶Œúÿÿÿÿ8¿‚ÿóö/
+X	java:S106"9Replace this use of System.out or System.err by a logger.(‘Ô¶Œúÿÿÿÿ8Ï˜ßõö/
+K
+java:S2446"0"notify" may not wake up the appropriate thread.(ŒâÌ†8Ï˜ßõö/

@@ -1,0 +1,14 @@
+
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Σ©’ÿÿÿÿÿ8†©„ίσ/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(μ…Θ½8†©„ίσ/
+T	java:S106"9Replace this use of System.out or System.err by a logger.(εÿΪ^8†©„ίσ/
+T	java:S106!"9Replace this use of System.out or System.err by a logger.(Κ™­t8†©„ίσ/
+Z	java:S106 "9Replace this use of System.out or System.err by a logger.(Ώ©‘Σόÿÿÿÿ8†©„ίσ/
+r
+java:S2159!"VRemove this call to "equals"; comparisons between unrelated types always return false.(Κ™­t8†©„ίσ/
+X	java:S125"<This block of commented-out lines of code should be removed.(ΠƒγΚ8ΛΞÒήσ/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(—έξ‹8†©„ίσ/
+V
+java:S4973"9Use the "equals" method if value comparison was intended.(μ…Θ½8†©„ίσ/
+V
+java:S4973"9Use the "equals" method if value comparison was intended.(—έξ‹8†©„ίσ/
