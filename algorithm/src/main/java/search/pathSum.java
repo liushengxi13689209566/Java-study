@@ -1,14 +1,17 @@
+/*
 package search;
 
 import javax.swing.tree.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 
+*/
 /**
  * @Date: 2022-03-30 23:05
  * @Author: liushengxi
  * @Description: 二叉树中和为某一值的路径
- */
+ *//*
+
 public class pathSum {
     class Solution {
         // 一般是比较复杂的数据结构：会放在类的成员变量中
@@ -43,3 +46,4 @@ public class pathSum {
 
 }
 
+*/

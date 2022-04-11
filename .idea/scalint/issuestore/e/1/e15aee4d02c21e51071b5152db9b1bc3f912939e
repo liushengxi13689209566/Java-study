@@ -1,10 +1,10 @@
 
-B
-java:S1602",Remove useless curly braces around statement(ÓÚî–
-`	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ò:
-X
-java:S2259"BA "NullPointerException" could be thrown; "str1" is nullable here.(·ú¾¿
-N	java:S106"9Replace this use of System.out or System.err by a logger.(ççÒ•
-S	java:S106"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ
-M
-java:S1854"7Remove this useless assignment to local variable "tmp".(Æ„¹è
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ò:8³»–ÿ/
+_
+java:S2259"BA "NullPointerException" could be thrown; "str1" is nullable here.(·ú¾¿8³»–ÿ/
+T
+java:S1854"7Remove this useless assignment to local variable "tmp".(Æ„¹è8³»–ÿ/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ8³»–ÿ/
+I
+java:S1602",Remove useless curly braces around statement(ÓÚî–8³»–ÿ/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ççÒ•8³»–ÿ/
