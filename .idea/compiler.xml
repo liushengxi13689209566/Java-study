@@ -9,12 +9,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="JVMExercise" />
         <module name="EffectiveJava" />
-        <module name="GeekTimeExercise" />
         <module name="ThinkInJava" />
         <module name="concurrent" />
+        <module name="GeekTimeExercise" />
         <module name="DesignPatterns" />
         <module name="SpringStudy" />
-        <module name="Crazy-Java" />
+        <module name="Crazy-Java (1)" />
         <module name="WorkTest" />
         <module name="algorithm" />
       </profile>
@@ -23,10 +23,10 @@
       <module name="algorithm" target="8" />
       <module name="concurrent" target="8" />
       <module name="Crazy-Java" target="1.5" />
+      <module name="Crazy-Java (1)" target="1.5" />
       <module name="DesignPatterns" target="7" />
       <module name="EffectiveJava" target="1.5" />
       <module name="GeekTimeExercise" target="11" />
-      <module name="Java-study" target="1.5" />
       <module name="JVMExercise" target="1.5" />
       <module name="SpringStudy" target="6" />
       <module name="ThinkInJava" target="1.5" />
