@@ -6,8 +6,6 @@ package LinkList;
  * @Description: 剑指 Offer 35. 复杂链表的复制
  */
 public class copyRandomList {
-
-
     // Definition for a Node.
     class Node {
         int val;
