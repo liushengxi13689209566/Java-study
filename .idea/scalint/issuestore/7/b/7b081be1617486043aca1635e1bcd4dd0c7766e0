@@ -1,0 +1,37 @@
+
+hpython:S100„"PRename method "appendOutput" to match the regular expression ^[a-z_][a-z0-9_]*$.(›ÜòŒ
+cpython:S1192@"KDefine a constant instead of duplicating this literal "/* Output:" 3 times.(Ÿæ…
+zpython:S117`"^Rename this local variable "controlSample" to match the regular expression ^[_a-z][a-z0-9_]*$.(“°Œúúÿÿÿÿ
+mpython:S116."VRename this field "comparisonFile" to match the regular expression ^[_a-z][_a-z0-9]*$.(¹äŠı
+tpython:S117e"]Rename this local variable "controlLines" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ÿ‚…†
+Spython:PrintStatementUsagem"-Replace print statement by built-in function.(ªÀ¿»
+mpython:S1542"TRename function "_makePrintable" to match the regular expression ^[a-z_][a-z0-9_]*$.(«”ÙÙ
+Tpython:PrintStatementUsage¬"-Replace print statement by built-in function.(æ·Éº
+mpython:S116¦"PRename this field "filePath" to match the regular expression ^[_a-z][_a-z0-9]*$.(®şŸåÿÿÿÿÿ
+fpython:S116+"ORename this field "runTest" to match the regular expression ^[_a-z][_a-z0-9]*$.(ÙÂ­§
+ppython:S117""TRename this parameter "fileName" to match the regular expression ^[_a-z][a-z0-9_]*$.(Â‡òÑıÿÿÿÿ
+dpython:S1192"FDefine a constant instead of duplicating this literal ".java" 6 times.(åİÔÊÿÿÿÿÿ
+upython:S117""YRename this parameter "referencePath" to match the regular expression ^[_a-z][a-z0-9_]*$.(Â‡òÑıÿÿÿÿ
+Tpython:PrintStatementUsageÇ"-Replace print statement by built-in function.(Îæìı
+lpython:S116“"TRename this field "sourceOutput" to match the regular expression ^[_a-z][_a-z0-9]*$.(°ü³
+kpython:S116,"TRename this field "insertOutput" to match the regular expression ^[_a-z][_a-z0-9]*$.(şêáß
+lpython:S100"TRename method "getControlSample" to match the regular expression ^[a-z_][a-z0-9_]*$.(Çö»…
+kpython:S117¥"TRename this parameter "filePath" to match the regular expression ^[_a-z][a-z0-9_]*$.(„å±c
+lpython:S116#"PRename this field "fileName" to match the regular expression ^[_a-z][_a-z0-9]*$.(æ‚Ñ¬øÿÿÿÿ
+npython:S116("RRename this field "reportFile" to match the regular expression ^[_a-z][_a-z0-9]*$.(÷¡Ò¾ıÿÿÿÿ
+kpython:S117X"TRename this parameter "fileName" to match the regular expression ^[_a-z][a-z0-9_]*$.(€€£ò
+wpython:S116-"`Rename this field "EmbeddedComparisonOutput" to match the regular expression ^[_a-z][_a-z0-9]*$.(´š‘á
+xpython:S117f"\Rename this local variable "resultLines" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÍË¬Ìùÿÿÿÿ
+opython:S116%"SRename this field "errorOutput" to match the regular expression ^[_a-z][_a-z0-9]*$.(º™îˆüÿÿÿÿ
+spython:S117p"\Rename this local variable "actualRatio" to match the regular expression ^[_a-z][a-z0-9_]*$.(èşå¯
+upython:S117c"^Rename this local variable "controlOutput" to match the regular expression ^[_a-z][a-z0-9_]*$.(„Àü˜
+;python:S125D"Remove this commented out code.(µØÏôùÿÿÿÿ
+ipython:S100X"RRename method "compareResults" to match the regular expression ^[a-z_][a-z0-9_]*$.(€€£ò
+ppython:S116$"TRename this field "normalOutput" to match the regular expression ^[_a-z][_a-z0-9]*$.(´îŸØûÿÿÿÿ
+rpython:S117""VRename this parameter "reportFile" to match the regular expression ^[_a-z][a-z0-9_]*$.(Â‡òÑıÿÿÿÿ
+qpython:S116'"URename this field "referencePath" to match the regular expression ^[_a-z][_a-z0-9]*$.(ê‚‘·ıÿÿÿÿ
+Xpython:PrintStatementUsageM"-Replace print statement by built-in function.(‹™¦éıÿÿÿÿ
+Xpython:PrintStatementUsageT"-Replace print statement by built-in function.(‹™¦éıÿÿÿÿ
+lpython:S1542˜"SRename function "makePrintable" to match the regular expression ^[a-z_][a-z0-9_]*$.(ïõ³´
+qpython:S3776""TRefactor this function to reduce its Cognitive Complexity from 16 to the 15 allowed.(Â‡òÑıÿÿÿÿ
+Ypython:PrintStatementUsage¼"-Replace print statement by built-in function.(»µ¾Šşÿÿÿÿ

@@ -1,0 +1,27 @@
+
+J
+java:S5411"*Use the primitive boolean expression here.(´Ñë§şÿÿÿÿ8ì¬çõö/
+>
+java:S1444"*Make this "public static lock" field final(Èñˆ
+K
+java:S2446"0"notify" may not wake up the appropriate thread.(ŒâÌ†8ì¬çõö/
+a
+java:S1104"MMake i a static final constant or non-public and provide accessors if needed.(€ˆé˜
+O
+java:S3740"/Provide the parametrized type for this generic.(ÜŒ×»ıÿÿÿÿ8¦äõö/
+d
+java:S1104"PMake lock a static final constant or non-public and provide accessors if needed.(Èñˆ
+i
+java:S1104"PMake flag a static final constant or non-public and provide accessors if needed.(×Ùğåÿÿÿÿÿ
+K
+java:S2446"0"notify" may not wake up the appropriate thread.(ŒâÌ†8†Úåõö/
+C
+java:S1444"*Make this "public static flag" field final(×Ùğåÿÿÿÿÿ
+J
+java:S5411"*Use the primitive boolean expression here.(ıü‡Ìûÿÿÿÿ8†Úåõö/
+;
+java:S1444"'Make this "public static i" field final(€ˆé˜
+R	java:S106"9Replace this use of System.out or System.err by a logger.(©ÿ©8†Úåõö/
+O
+java:S3740"/Provide the parametrized type for this generic.(È±á¿şÿÿÿÿ8°Êæõö/
+S	java:S106"9Replace this use of System.out or System.err by a logger.(áé¤½8ì¬çõö/

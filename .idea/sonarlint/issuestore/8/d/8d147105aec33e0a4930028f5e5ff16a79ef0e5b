@@ -1,0 +1,19 @@
+
+P
+java:S1118":Add a private constructor to hide the implicit public one.(ûÆ›
+c
+java:S1854
+"HRemove this useless assignment to local variable "jsonRuleConfigParser".(ËŞàÆûÿÿÿÿ
+\
+java:S1854":Remove this useless assignment to local variable "parser".(·Ùÿ•şÿÿÿÿ8éËà·÷/
+W
+java:S1854":Remove this useless assignment to local variable "parser".(Û›¨8éËà·÷/
+T
+java:S1481
+"9Remove this unused "jsonRuleConfigParser" local variable.(ËŞàÆûÿÿÿÿ
+M
+java:S1481"+Remove this unused "parser" local variable.(§»Ê¹ÿÿÿÿÿ8éËà·÷/
+\
+java:S1854%":Remove this useless assignment to local variable "parser".( Èèşÿÿÿÿ8éËà·÷/
+\
+java:S1854 ":Remove this useless assignment to local variable "parser".(ø¿´öşÿÿÿÿ8éËà·÷/

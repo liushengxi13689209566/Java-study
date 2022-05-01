@@ -1,0 +1,8 @@
+
+`
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(„ˆ¹ù8óƒù¼ö/
+m	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.( ×”Ñ
+r
+java:S3077"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(„ˆ¹ù8óƒù¼ö/
+U
+java:S1118":Add a private constructor to hide the implicit public one.(çì¹ä8ÊŸë¼ö/
