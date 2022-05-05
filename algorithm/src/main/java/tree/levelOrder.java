@@ -22,8 +22,6 @@ import java.util.Queue;
  * TreeNode(int x) { val = x; }
  * }
  */
-@Ignore
-@jdk.nashorn.internal.ir.annotations.Ignore
 public class levelOrder {
     class Solution {
         public int[] levelOrder(TreeNode root) {
