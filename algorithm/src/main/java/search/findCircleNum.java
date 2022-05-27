@@ -33,6 +33,7 @@ public class findCircleNum {
                 return -1;
             }
             int cities = isConnected.length;
+            // 默认是 false
             boolean[] visited = new boolean[cities];
             int result = 0;
             for (int i = 0; i < cities; i++) {
