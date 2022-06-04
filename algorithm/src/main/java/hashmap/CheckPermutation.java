@@ -1,9 +1,25 @@
-import com.google.common.collect.Lists;
+package hashmap;
 
-import java.util.*;
+import java.util.HashMap;
 
-
-public class Temp {
+/**
+ * 面试题 01.02. 判定是否互为字符重排
+ * 给定两个字符串 s1 和 s2，请编写一个程序，确定其中一个字符串的字符重新排列后，能否变成另一个字符串。
+ * <p>
+ * 示例 1：
+ * <p>
+ * 输入: s1 = "abc", s2 = "bca"
+ * 输出: true
+ * 示例 2：
+ * <p>
+ * 输入: s1 = "abc", s2 = "bad"
+ * 输出: false
+ * 说明：
+ * <p>
+ * 0 <= len(s1) <= 100
+ * 0 <= len(s2) <= 100
+ */
+public class CheckPermutation {
     static class Solution {
         public boolean CheckPermutation(String s1, String s2) {
             if (s1 == null || s2 == null) {
@@ -29,10 +45,4 @@ public class Temp {
             return map.isEmpty();
         }
     }
-
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        solution.CheckPermutation("asvnpzurz", "urzsapzvn");
-    }
 }
-
