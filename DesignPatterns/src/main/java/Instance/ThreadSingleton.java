@@ -12,7 +12,7 @@ public class ThreadSingleton {
 
 }
 
-public class IdGenerator {
+class IdGenerator {
     private AtomicLong id = new AtomicLong(0);
 
     private static final ConcurrentHashMap<Long, IdGenerator> instances

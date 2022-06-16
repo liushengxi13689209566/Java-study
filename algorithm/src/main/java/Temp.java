@@ -3,36 +3,38 @@ import com.google.common.collect.Lists;
 import java.util.*;
 
 
+
 public class Temp {
     static class Solution {
-        public boolean CheckPermutation(String s1, String s2) {
-            if (s1 == null || s2 == null) {
-                return false;
+        public List<List<Integer>> kSmallestPairs(int[] nums1, int[] nums2, int k) {
+            // 小顶堆
+            PriorityQueue<int[]> pq = new PriorityQueue<>(k, (o1, o2) -> {
+                return nums1[o1[0]] + nums2[o1[1]] - nums1[o2[0]] - nums2[o2[1]];
+            });
+            List<List<Integer>> ans = new ArrayList<>();
+            int m = nums1.length;
+            int n = nums2.length;
+            for (int i = 0; i < Math.min(m, k); i++) {
+                pq.offer(new int[]{i, 0});
             }
-            char[] charS1 = s1.toCharArray();
-            char[] charS2 = s2.toCharArray();
-            HashMap<Character, Integer> map = new HashMap<>();
-            for (int i = 0; i < charS1.length; i++) {
-                map.put(charS1[i], map.getOrDefault(charS1[i], 0) + 1);
-            }
-            for (int i = 0; i < charS2.length; i++) {
-                if (!map.containsKey(charS2[i])) {
-                    return false;
-                } else {
-                    if ((map.get(charS2[i]) - 1) == 0) {
-                        map.remove(charS2[i]);
-                    } else {
-                        map.put(charS2[i], map.get(charS2[i]) - 1);
-                    }
+            while (k-- > 0 && !pq.isEmpty()) {
+                int[] idxPair = pq.poll();
+                List<Integer> list = new ArrayList<>();
+                list.add(nums1[idxPair[0]]);
+                list.add(nums2[idxPair[1]]);
+                ans.add(list);
+                if (idxPair[1] + 1 < n) {
+                    pq.offer(new int[]{idxPair[0], idxPair[1] + 1});
                 }
             }
-            return map.isEmpty();
+
+            return ans;
         }
     }
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        solution.CheckPermutation("asvnpzurz", "urzsapzvn");
+//        solution.CheckPermutation("asvnpzurz", "urzsapzvn");
     }
 }
 
