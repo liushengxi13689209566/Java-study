@@ -15,16 +15,31 @@ import java.util.*;
  */
 public class Temp {
     static class Solution {
-        public int[] swapNumbers(int[] numbers) {
-            numbers[0]=numbers[0]^numbers[1];
-            numbers[1]=numbers[0]^numbers[1];
-            numbers[0]=numbers[0]^numbers[1];
-            return numbers;
+        public int[] subSort(int[] array) {
+            if (array == null || array.length <= 1) {
+                return new int[]{-1, -1};
+            }
+            int n = array.length;
+            int maxx = Integer.MIN_VALUE;
+            int minn = Integer.MAX_VALUE;
+
+            int l = -1, r = -1;
+            // 找
+            for (int i = 0; i < n; ++i) {
+                if (array[i] < maxx) r = i;
+                else maxx = array[i];
+            }
+            for (int i = n - 1; i >= 0; --i) {
+                if (array[i] > minn) l = i;
+                else minn = array[i];
+            }
+            return new int[]{l, r};
         }
-    }
 
         public static void main(String[] args) {
             Solution solution = new Solution();
+//        solution.subSort(new int[]{1, 2, 4, 7, 10, 11, 7, 12, 6, 7, 16, 18, 19});
+            solution.subSort(new int[]{1, 3, 9, 7, 5});
         }
     }
 }
