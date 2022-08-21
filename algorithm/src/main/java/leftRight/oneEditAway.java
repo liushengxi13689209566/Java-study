@@ -1,28 +1,37 @@
-import com.google.common.collect.Lists;
+package leftRight;
 
-import java.util.*;
+/*
+*  https://leetcode.cn/problems/one-away-lcci/
+* 面试题 01.05. 一次编辑
 
-/**
- * 剑指 Offer 51. 数组中的逆序对
- * 在数组中的两个数字，如果前面一个数字大于后面的数字，则这两个数字组成一个逆序对。输入一个数组，求出这个数组中的逆序对的总数。
- * 示例 1:
- * 输入: [7,5,6,4]
- * 输出: 5
- * 限制：
- * 0 <= 数组长度 <= 50000
- * 思路：
- * （1）暴力解法肯定会超时
- * "horse"
- * "ros"
- * "pale"
- * "ple"
- * "pales"
- * "pal"
- * "inten tion"
- * "execu tion"
- */
-public class Temp {
-    static class Solution {
+字符串有三种编辑操作:插入一个英文字符、删除一个英文字符或者替换一个英文字符。 给定两个字符串，编写一个函数判定它们是否只需要一次(或者零次)编辑。
+
+
+
+示例 1:
+
+输入:
+first = "pale"
+second = "ple"
+输出: True
+
+
+
+示例 2:
+
+输入:
+first = "pales"
+second = "pal"
+输出: False
+
+思路：见代码
+* 时间：O(max(n,m))
+* 空间：O(1)
+*
+*
+* */
+public class oneEditAway {
+    class Solution {
         public boolean oneEditAway(String first, String second) {
             int len = first.length() - second.length();
             if (len > 1 || len < -1) {
@@ -50,11 +59,4 @@ public class Temp {
             return true;
         }
     }
-
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-//        solution.subSort(new int[]{1, 2, 4, 7, 10, 11, 7, 12, 6, 7, 16, 18, 19});
-//        solution.subSort(new int[]{1, 3, 9, 7, 5});
-    }
 }
-
