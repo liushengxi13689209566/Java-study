@@ -23,31 +23,24 @@ import java.util.*;
  */
 public class Temp {
     static class Solution {
-        public boolean oneEditAway(String first, String second) {
-            int len = first.length() - second.length();
-            if (len > 1 || len < -1) {
-                return false;
+        public int massage(int[] nums) {
+            if (nums == null || nums.length < 1) {
+                return 0;
             }
-            // 表示只能编辑一次
-            int count = 1;
-            for (int i = 0, j = 0; i < first.length() && j < second.length(); i++, j++) {
-                if (first.charAt(i) != second.charAt(j)) {
-                    // len 等于 1，说明 first 长于 second
-                    // second要不要添加一个字符
-                    if (len == 1) {
-                        j--;
-                        // len 等于 1，说明 first 短于 second
-                        // second 要不要删除一个字符
-                    } else if (len == -1) {
-                        i--;
-                    }
-                    count--;
-                }
-                if (count < 0) {//最多编辑一次
-                    return false;
-                }
+            int len = nums.length;
+            // dp[i][2] i 表示到 i 处所获得的最优, i的范围是: 0->n
+            // 另外两个维度表示：0：接  || 1：不接
+            int[][] maxPro = new int[len][2];
+            int result = nums[0];
+            maxPro[0][0] = nums[0];
+            maxPro[0][1] = 0;
+            for (int i = 1; i < len; i++) {
+                // 当天接受预约 = 前一天 不接受预约 的最大值（因为其前一天一定没有被预约）
+                maxPro[i][0] = maxPro[i - 1][1] + nums[i];
+                // 当天不接受预约 = 前一天接受/不接受 的最大值
+                maxPro[i][1] = Math.max(maxPro[i - 1][0], maxPro[i - 1][1]);
             }
-            return true;
+            return Math.max(maxPro[len - 1][0], maxPro[len - 1][1]);
         }
     }
 
