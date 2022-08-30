@@ -1,40 +1,80 @@
+import LinkList.ListNode;
 import com.google.common.collect.Lists;
 
 import java.util.*;
 
+/*
+面试题 02.01. 移除重复节点
+
+编写代码，移除未排序链表中的重复节点。保留最开始出现的节点。
+
+示例1:
+
+ 输入：[1, 2, 3, 3, 2, 1]
+ 输出：[1, 2, 3]
+
+示例2:
+
+ 输入：[1, 1, 1, 1, 2]
+ 输出：[1, 2]
+
+提示：
+
+    链表长度在[0, 20000]范围内。
+    链表元素在[0, 20000]范围内。
+
+进阶：
+
+如果不得使用临时缓冲区，该怎么解决？
+* */
 public class Temp {
     static class Solution {
-        // 遍历下一个数字时，若它与之前保存的数字相同，则次数加1，否则次数减1；
-        // 若次数为0，则保存下一个数字，并将次数置为1。遍历结束后，所保存的数字即为所求。最后再判断它是否符合条件。
-        public int majorityElement(int[] nums) {
-            if (nums == null) return -1;
+        public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+            ListNode head = null;
+            ListNode tail = null;
+            int carry = 0;
 
-            int value = -1;
-            int count = 0;
-            for (int i = 0; i < nums.length; i++) {
-                // 若当前无人生还，跟踪下一位士兵的势力
-                if (count == 0) {
-                    value = nums[i];
+            while (l1 != null || l2 != null) {
+                int n1 = l1 != null ? l1.val : 0;
+                int n2 = l2 != null ? l2.val : 0;
+                int sum = n1 + n2 + carry;
+                if (head == null) {
+                    head = tail = new ListNode(sum % 10);
+                } else {
+                    tail.next = new ListNode(sum % 10);
+                    tail = tail.next;
                 }
-                // 下一位士兵是自己人，那么幸存人数++
-                if (value == nums[i]) count++;
-                // 来了个敌人，同归于尽，幸存人数--
-                else count--;
-            }
-            count = 0;
-            for (int num : nums) {
-                if (num == value) {
-                    count++;
+                carry = sum / 10;
+                if (l1 != null) {
+                    l1 = l1.next;
+                }
+                if (l2 != null) {
+                    l2 = l2.next;
                 }
             }
-            return count > nums.length / 2 ? value : -1;
+            if (carry != 0) {
+                tail.next = new ListNode(carry);
+                tail.next.next = null;
+            }
+            return head;
         }
     }
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        solution.majorityElement(new int[]{3, 3, 4});
-//        solution.subSort(new int[]{1, 3, 9, 7, 5});
+        ListNode l1 = new ListNode(2);
+        ListNode head1 = l1;
+        l1.next = new ListNode(4);
+        l1.next.next = new ListNode(9);
+        l1.next.next.next = null;
+
+        ListNode l2 = new ListNode(5);
+        ListNode head2 = l2;
+        l2.next = new ListNode(6);
+        l2.next.next = new ListNode(4);
+        l2.next.next.next = new ListNode(9);
+        l2.next.next.next.next = null;
+        solution.addTwoNumbers(head1, head2);
     }
 }
 
