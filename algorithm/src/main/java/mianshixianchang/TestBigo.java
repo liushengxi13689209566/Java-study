@@ -1,3 +1,5 @@
+package mianshixianchang;
+
 import lombok.SneakyThrows;
 import lombok.Synchronized;
 
