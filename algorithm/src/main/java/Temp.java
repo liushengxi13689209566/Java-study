@@ -4,77 +4,54 @@ import com.google.common.collect.Lists;
 import java.util.*;
 
 /*
-面试题 02.01. 移除重复节点
-
-编写代码，移除未排序链表中的重复节点。保留最开始出现的节点。
-
-示例1:
-
- 输入：[1, 2, 3, 3, 2, 1]
- 输出：[1, 2, 3]
-
-示例2:
-
- 输入：[1, 1, 1, 1, 2]
- 输出：[1, 2]
-
-提示：
-
-    链表长度在[0, 20000]范围内。
-    链表元素在[0, 20000]范围内。
-
-进阶：
-
-如果不得使用临时缓冲区，该怎么解决？
-* */
+ * */
 public class Temp {
     static class Solution {
-        public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-            ListNode head = null;
-            ListNode tail = null;
-            int carry = 0;
+        private int[][] dir = new int[][]{{0, 1}, {1, 0}, {-1, 0}, {0, -1}};
 
-            while (l1 != null || l2 != null) {
-                int n1 = l1 != null ? l1.val : 0;
-                int n2 = l2 != null ? l2.val : 0;
-                int sum = n1 + n2 + carry;
-                if (head == null) {
-                    head = tail = new ListNode(sum % 10);
-                } else {
-                    tail.next = new ListNode(sum % 10);
-                    tail = tail.next;
-                }
-                carry = sum / 10;
-                if (l1 != null) {
-                    l1 = l1.next;
-                }
-                if (l2 != null) {
-                    l2 = l2.next;
+        /*
+            行数 = matrix.length;
+            列数 = matrix[0].length;
+        */
+
+        private boolean check(int xx, int yy, int[][] image) {
+            int row = image.length;
+            int col = image[0].length;
+            if (xx < 0 || xx > row - 1) {
+                return false;
+            }
+            if (yy < 0 || yy > col - 1) {
+                return false;
+            }
+            return true;
+        }
+
+        private void dfs(int x, int y, int[][] image, int currColor, int newColor) {
+            // 如果该节点 与 上一个 节点颜色相同才染色
+            if (image[x][y] == currColor) {
+                image[x][y] = newColor;
+                for (int i = 0; i < 4; i++) {
+                    int xx = x + dir[i][0];
+                    int yy = y + dir[i][1];
+                    if (check(xx, yy, image)) {
+                        dfs(xx, yy, image, currColor, newColor);
+                    }
                 }
             }
-            if (carry != 0) {
-                tail.next = new ListNode(carry);
-                tail.next.next = null;
+        }
+
+        public int[][] floodFill(int[][] image, int sr, int sc, int newColor) {
+            int currColor = image[sr][sc];
+            // 如果 初始坐标点 与 新颜色 不同才染色，否则不染色。
+            if (currColor != newColor) {
+                dfs(sr, sc, image, currColor, newColor);
             }
-            return head;
+            return image;
         }
     }
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
-        ListNode l1 = new ListNode(2);
-        ListNode head1 = l1;
-        l1.next = new ListNode(4);
-        l1.next.next = new ListNode(9);
-        l1.next.next.next = null;
 
-        ListNode l2 = new ListNode(5);
-        ListNode head2 = l2;
-        l2.next = new ListNode(6);
-        l2.next.next = new ListNode(4);
-        l2.next.next.next = new ListNode(9);
-        l2.next.next.next.next = null;
-        solution.addTwoNumbers(head1, head2);
     }
 }
 
