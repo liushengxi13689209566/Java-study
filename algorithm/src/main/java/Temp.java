@@ -7,49 +7,26 @@ import java.util.*;
  * */
 public class Temp {
     static class Solution {
-        private int[][] dir = new int[][]{{0, 1}, {1, 0}, {-1, 0}, {0, -1}};
-
-        /*
-            行数 = matrix.length;
-            列数 = matrix[0].length;
-        */
-
-        private boolean check(int xx, int yy, int[][] image) {
-            int row = image.length;
-            int col = image[0].length;
-            if (xx < 0 || xx > row - 1) {
-                return false;
+        public int maxCoins(int[] nums) {
+            int n = nums.length;
+            int[][] rec = new int[n + 2][n + 2];
+            int[] val = new int[n + 2];
+            val[0] = val[n + 1] = 1;
+            for (int i = 1; i <= n; i++) {
+                val[i] = nums[i - 1];
             }
-            if (yy < 0 || yy > col - 1) {
-                return false;
-            }
-            return true;
-        }
-
-        private void dfs(int x, int y, int[][] image, int currColor, int newColor) {
-            // 如果该节点 与 上一个 节点颜色相同才染色
-            if (image[x][y] == currColor) {
-                image[x][y] = newColor;
-                for (int i = 0; i < 4; i++) {
-                    int xx = x + dir[i][0];
-                    int yy = y + dir[i][1];
-                    if (check(xx, yy, image)) {
-                        dfs(xx, yy, image, currColor, newColor);
+            for (int i = n - 1; i >= 0; i--) {
+                for (int j = i + 2; j <= n + 1; j++) {
+                    for (int k = i + 1; k < j; k++) {
+                        int sum = val[i] * val[k] * val[j];
+                        sum += rec[i][k] + rec[k][j];
+                        rec[i][j] = Math.max(rec[i][j], sum);
                     }
                 }
             }
-        }
-
-        public int[][] floodFill(int[][] image, int sr, int sc, int newColor) {
-            int currColor = image[sr][sc];
-            // 如果 初始坐标点 与 新颜色 不同才染色，否则不染色。
-            if (currColor != newColor) {
-                dfs(sr, sc, image, currColor, newColor);
-            }
-            return image;
+            return rec[0][n + 1];
         }
     }
-
     public static void main(String[] args) {
 
     }

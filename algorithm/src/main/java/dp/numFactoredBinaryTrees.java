@@ -9,8 +9,6 @@ import java.util.HashMap;
  * @Description: 823. 带因子的二叉树
  */
 public class numFactoredBinaryTrees {
-
-
     class Solution {
         public int numFactoredBinaryTrees(int[] arr) {
             if (arr == null) {
