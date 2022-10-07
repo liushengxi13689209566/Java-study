@@ -4,29 +4,40 @@ import com.google.common.collect.Lists;
 import java.util.*;
 
 /*
+
  * */
 public class Temp {
     static class Solution {
-        public int maxCoins(int[] nums) {
-            int n = nums.length;
-            int[][] rec = new int[n + 2][n + 2];
-            int[] val = new int[n + 2];
-            val[0] = val[n + 1] = 1;
-            for (int i = 1; i <= n; i++) {
-                val[i] = nums[i - 1];
+        private TreeSet<Integer> intSet = new TreeSet<>();
+
+        private void dfs(int res, int shorter, int longer, int k) {
+            if (k <= 0) {
+                if (res != 0) intSet.add(res);
+                return;
             }
-            for (int i = n - 1; i >= 0; i--) {
-                for (int j = i + 2; j <= n + 1; j++) {
-                    for (int k = i + 1; k < j; k++) {
-                        int sum = val[i] * val[k] * val[j];
-                        sum += rec[i][k] + rec[k][j];
-                        rec[i][j] = Math.max(rec[i][j], sum);
-                    }
-                }
+            dfs(res + shorter, shorter, longer, k - 1);
+            dfs(res + longer, shorter, longer, k - 1);
+        }
+
+        public int[] divingBoardDFS(int shorter, int longer, int k) {
+            dfs(0, shorter, longer, k);
+            return intSet.stream().mapToInt(Integer::intValue).toArray();
+        }
+
+        public int[] divingBoard(int shorter, int longer, int k) {
+            if (k <= 0) {
+                return new int[0];
             }
-            return rec[0][n + 1];
+            TreeSet<Integer> resSet = new TreeSet<>();
+            int min = shorter * k;
+            resSet.add(min);
+            for (int i = 0; i <= k; i++) {
+                resSet.add(min - i * shorter + i * longer);
+            }
+            return resSet.stream().mapToInt(Integer::intValue).toArray();
         }
     }
+
     public static void main(String[] args) {
 
     }
