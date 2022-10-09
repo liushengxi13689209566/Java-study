@@ -8,33 +8,18 @@ import java.util.*;
  * */
 public class Temp {
     static class Solution {
-        private TreeSet<Integer> intSet = new TreeSet<>();
-
-        private void dfs(int res, int shorter, int longer, int k) {
-            if (k <= 0) {
-                if (res != 0) intSet.add(res);
-                return;
+        public int maxSubArray(int[] nums) {
+            int max = Integer.MIN_VALUE;
+            int s = 0;
+            for (int num : nums) {
+                if (s < 0) {
+                    s = num;
+                } else {
+                    s += num;
+                }
+                max =  Math.max(s,max);
             }
-            dfs(res + shorter, shorter, longer, k - 1);
-            dfs(res + longer, shorter, longer, k - 1);
-        }
-
-        public int[] divingBoardDFS(int shorter, int longer, int k) {
-            dfs(0, shorter, longer, k);
-            return intSet.stream().mapToInt(Integer::intValue).toArray();
-        }
-
-        public int[] divingBoard(int shorter, int longer, int k) {
-            if (k <= 0) {
-                return new int[0];
-            }
-            TreeSet<Integer> resSet = new TreeSet<>();
-            int min = shorter * k;
-            resSet.add(min);
-            for (int i = 0; i <= k; i++) {
-                resSet.add(min - i * shorter + i * longer);
-            }
-            return resSet.stream().mapToInt(Integer::intValue).toArray();
+            return max;
         }
     }
 
