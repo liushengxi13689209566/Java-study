@@ -1,29 +1,38 @@
 import tree.TreeNode;
 
+import java.util.Arrays;
+
 /*
+输入：{1, 3, 15, 11, 2},
+{23, 127, 235, 19, 8}
+输出：3，即数值对(11, 8)
 
  * */
 public class Temp {
     static class Solution {
-        public int c(int n) {
-            if (n == 1) return 1;
-            if (n == 2) return 2;
-            if (n == 3) return 4;
-
-            int dp[] = new int[n + 1];
-
-            dp[1] = 1;
-            dp[2] = 2;
-            dp[3] = 4;
-            for (int i = 4; i <= n; i++) {
-                dp[i] = ((dp[i - 3] + dp[i - 2]) % 1000000007 + dp[i - 1]) % 1000000007;
+        public int smallestDifference(int[] a, int[] b) {
+            Arrays.sort(a);
+            Arrays.sort(b);
+            long res = Long.MAX_VALUE;
+            for (int i = 0, j = 0; i < a.length && j < b.length; ) {
+                if (a[i] == b[j]) return 0;
+                long dif = a[i] - b[j];
+                res = Math.min(Math.abs(dif), res);
+                if (dif < 0) {
+                    i++;
+                } else {
+                    j++;
+                }
             }
-            return dp[n];
+            return (int) res;
         }
     }
 
     public static void main(String[] args) {
-
+        Solution solution = new Solution();
+        int[] a = new int[]{-2147483648, 1};
+        int[] b = new int[]{2147483647, 0};
+        solution.smallestDifference(a, b);
     }
 }
 
