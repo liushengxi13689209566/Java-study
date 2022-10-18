@@ -1,23 +1,31 @@
+package search;
+
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.TreeSet;
 
 /*
-面试题 17.06. 2出现的次数
-编写一个方法，计算从 0 到 n (含 n) 中数字 2 出现的次数。
-示例:
-输入: 25
-输出: 9
-解释: (2, 12, 20, 21, 22, 23, 24, 25)(注意 22 应该算作两次)
+https://leetcode.cn/problems/pond-sizes-lcci/
+
+面试题 16.19. 水域大小
+你有一个用于表示一片土地的整数矩阵land，该矩阵中每个点的值代表对应地点的海拔高度。若值为0则表示水域。由垂直、水平或对角连接的水域为池塘。池塘的大小是指相连接的水域的个数。编写一个方法来计算矩阵中所有池塘的大小，返回值需要从小到大排序。
+
+示例：
+
+输入：
+[
+  [0,2,1,0],
+  [0,1,0,1],
+  [1,1,0,1],
+  [0,1,0,1]
+]
+输出： [1,2,4]
 提示：
-n <= 10^9
- * */
-public class Temp {
-    static //输入：words =
-//["I","am","a","student","from","a","university","in","a","student"],
-// word1 = "student", word2 = "a"
-//输出：1
+
+0 < len(land) <= 1000
+0 < len(land[i]) <= 1000
+# TODO：思路 dfs
+* */
+public class pondSizes {
     class Solution {
         private int[][] dir = new int[][]{{0, 1}, {1, 0}, {-1, 0}, {0, -1},
                 {1, -1}, {1, 1}, {-1, 1}, {-1, -1}};
@@ -48,6 +56,7 @@ public class Temp {
         }
 
         private int dfs(int x, int y, int[][] land) {
+            // 特别注意下面两点
             // 进入dfs，必然意味着通过了 check()
             int num = 1;
             //标记该点已经被搜过
@@ -62,12 +71,4 @@ public class Temp {
             return num;
         }
     }
-
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        int[] a = new int[]{-2147483648, 1};
-        int[] b = new int[]{2147483647, 0};
-//        solution.numberOf2sInRange(25);
-    }
 }
-
