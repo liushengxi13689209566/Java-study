@@ -11,8 +11,6 @@ u
 ECrazy-Java/src/main/java/com/tattoo/codes/fourteen/TestProcessor.java,4/7/47819211b6c7ea1f7ba220392ae244edc4a1e8e4
 m
 =Crazy-Java/src/main/java/com/tattoo/codes/IDEAStudy/User.java,3/1/310e1ea243dea2d104c727859974b09255e7f40e
-7
-pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
 o
 ?Crazy-Java/src/main/java/com/tattoo/codes/fourteen/RunTest.java,b/9/b9b26ebe0340d4c9030212e31ecb9d700f76eae6
 q
@@ -165,8 +163,6 @@ p
 @GeekTimeExercise/src/main/java/com/codes/ThreadPoolExercise.java,4/9/495b5ecdbb3d0171c344fd826108f82ad3450340
 V
 &WorkTest/src/test/java/TestRemove.java,7/6/76ad5e60ac7857a5e1ae385593bda7d824f7495b
-@
-WorkTest/pom.xml,1/f/1f3901edf7315deab26582bed2f04476f0f93889
 u
 EGeekTimeExercise/src/main/java/com/codes/DesignPattern/echo_easy.java,e/a/ea5ea144f83366e70b03e32d6c4854d32d4dce81
 |
@@ -211,8 +207,6 @@ _
 /Thinking_in_java_4th/innerclasses/Parcel11.java,0/b/0bea1d89ff7e73bbf7805d92157d6c68a71fe728
 ^
 .Thinking_in_java_4th/innerclasses/Parcel1.java,a/a/aa0019a49aae82813ed7d301f501bf22ec49d1e5
-F
-DesignPatterns/pom.xml,5/0/5048c14a6cd904d34aa2d3a571b3b39413912e68
 f
 6DesignPatterns/src/main/java/creater/BeansFactory.java,2/6/2640476442eae4cf5521f2004e9197d8247a0057
 v
@@ -303,12 +297,8 @@ T
 $DesignPatterns/src/main/java/YY.java,8/f/8fd1689a9d64cf7a70f0f7ee31a62f55cd7646da
 Y
 )JVMExercise/src/main/java/VectorTest.java,d/1/d1128d563a446f5bd4fdbf3f66442c1f7f0e8ddd
-C
-SpringStudy/pom.xml,c/9/c93443aeb2682b337b3aa22827328af52da1f0de
 h
 8SpringStudy/src/main/java/com/tattoo/code/HelloWord.java,9/9/991e8a9893e2996f766f05288a6b7613c016fff7
-B
-concurrent/pom.xml,2/f/2f4356f5ffc56f32f4756224b20afc61adfaefaa
 j
 :concurrent/src/main/java/com/tattoo/code/CreateThread.java,6/4/642d2f33539e9baf359a49ec7f17ff0b4d23041f
 q
@@ -325,8 +315,6 @@ a
 ,Thinking_in_java_4th/typeinfo/NullRobot.java,8/a/8ab530911fd83d4bee74ca4b1b5b663eb1b0bb27
 n
 >SpringStudy/src/main/java/com/tattoo/code/JDKDynamicProxy.java,1/1/11cf46108f324a3e6f31d23897167d7bf27a15a0
-^
-.algorithm/src/main/java/LinkList/Solution.java,c/c/cc34f6a6781dd5a977a4c8e4807dcc016c8ec820
 X
 (algorithm/src/main/java/hash/twoSum.java,1/9/19a29201a627239baf810df52fbc840869fd6201
 A
@@ -421,8 +409,6 @@ l
 -DesignPatterns/src/main/java/temple/test.java,7/6/7674458b81bcdd69fe4b658c663d3cdcae8c1cfb
 [
 +DesignPatterns/src/main/java/duty/demo.java,9/c/9c73a36be79a89744ff747b500b47ade9b873c39
-S
-#algorithm/src/main/java/Window.java,4/4/442ee3667fd5e77c72324bd8386a434d6de7427b
 ]
 -algorithm/src/main/java/minFlipsMonoIncr.java,c/a/ca4ff3f953f57f22335e2ca4ec1016e898eb9ef8
 ]

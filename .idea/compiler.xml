@@ -15,22 +15,11 @@
         <module name="DesignPatterns" />
         <module name="SpringStudy" />
         <module name="Crazy-Java (1)" />
+        <module name="RxJava-study" />
         <module name="WorkTest" />
         <module name="algorithm" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="11">
-      <module name="algorithm" target="8" />
-      <module name="concurrent" target="8" />
-      <module name="Crazy-Java" target="1.5" />
-      <module name="Crazy-Java (1)" target="1.5" />
-      <module name="DesignPatterns" target="7" />
-      <module name="EffectiveJava" target="1.5" />
-      <module name="GeekTimeExercise" target="11" />
-      <module name="JVMExercise" target="1.5" />
-      <module name="SpringStudy" target="6" />
-      <module name="ThinkInJava" target="1.5" />
-      <module name="WorkTest" target="1.5" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="11" />
   </component>
 </project>
