@@ -1,11 +1,8 @@
 package leftRight;
 
-import sun.security.util.BitArray;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.stream.Collectors;
 
 /**
  * https://leetcode.cn/problems/que-shi-de-shu-zi-lcof/description/
