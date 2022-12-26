@@ -47,8 +47,6 @@ c
 3algorithm/src/main/java/other/minFlipsMonoIncr.java,6/1/61be661a3cdae5bd2f60b6b05b3cfe7aed04c2af
 X
 (algorithm/src/main/java/other/MyPow.java,a/c/ac06f02364bf482c4fccefeab491a0e76bde01e4
-`
-0algorithm/src/main/java/other/nthUglyNumber.java,8/f/8f819967211f7bbe8a8ab1af92bc049bc02e58b9
 Z
 *algorithm/src/main/java/other/sumNums.java,7/7/77ad35d263b4addc6144a4f0e61d801762a25950
 _
