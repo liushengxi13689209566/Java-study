@@ -6,8 +6,6 @@ package dp;
  * @Description:
  */
 public class maxProduct {
-
-
     class Solution {
         public int maxProduct(int[] nums) {
             if (nums == null) {
@@ -27,7 +25,6 @@ public class maxProduct {
                 } else {
                     dp[i][1] = dp[i - 1][1] * nums[i];
                 }
-
                 System.out.println("maxRes == " + maxRes);
                 System.out.println("dp[i] == " + dp[i]);
                 System.out.println("dp[i-1] == " + dp[i - 1]);

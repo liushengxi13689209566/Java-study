@@ -19,6 +19,7 @@
         <module>SpringStudy</module>
         <module>concurrent</module>
         <module>algorithm</module>
+        <module>RxJava-study</module>
     </modules>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->

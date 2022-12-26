@@ -6,8 +6,6 @@ package dp;
  * @Description:
  */
 public class maxProfit {
-
-
     class Solution {
         public int maxProfit(int[] prices) {
             if (prices == null) {
