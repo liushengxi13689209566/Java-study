@@ -1,45 +1,44 @@
 package other;
 
-/*
-给定一个放有字母和数字的数组，找到最长的子数组，且包含的字母和数字的个数相同。
+import java.util.*;
 
-返回该子数组，若存在多个最长子数组，返回左端点下标值最小的子数组。若不存在这样的数组，返回一个空数组。
-
-示例 1:
-
-输入: ["A","1","B","C","D","2","3","4","E","5","F","G","6","7","H","I","J","K","L","M"]
-
-输出: ["A","1","B","C","D","2","3","4","E","5","F","G","6","7"]
-
-示例 2:
-
-输入: ["A","A"]
-
-输出: []
-
-举例：
-[3,4,2,3]   false
-[5,7,1,8]   5778
-
- * */
 public class Temp {
     static class Solution {
-        // 1，3，5，7，9，15，21,25,27,35,45
-        public int getKthMagicNumber(int k) {
-            int[] dp = new int[k + 4];
-            dp[0] = 1;
-            dp[1] = 3;
-            dp[2] = 5;
-            dp[3] = 7;
-            if (k <= 3) {
-                return dp[k - 1];
+        public String longestWord(String[] words) {
+            // 降序排序:先按照长度排序，长度相同时，按照字典序排序
+            Arrays.sort(words, ((a, b) -> a.length() == b.length() ? a.compareTo(b) : b.length() - a.length()));
+
+            Set<String> set = new HashSet<>();
+            for (String word : words) {
+                set.add(word);
             }
-            for (int i = 4; i < k; i++) {
-                dp[i] = dp[i - 3] * 3;
-                dp[i] = dp[i - 3] * 5;
-                dp[i] = dp[i - 3] * 7;
+
+            for (String word : words) {
+                //防止整个字符串与自身匹配返回true，且后续不会用到直接删除
+                set.remove(word);
+
+                // 递归判断是由那些单词组成
+                if (check(word, set)) {
+                    return word;
+                }
             }
-            return dp[k - 1];
+            return "";
+        }
+
+        private boolean check(String word, Set<String> set) {
+            if (word.length() == 0) {
+                return true;
+            }
+            for (int i = 1; i <= word.length(); i++) {
+                // 0 ~ i-1
+                if (set.contains(word.substring(0, i))) {
+                    // i ~ word.length()-1
+                    if (check(word.substring(i), set)) {
+                        return true;
+                    }
+                }
+            }
+            return false;
         }
     }
 
@@ -52,7 +51,7 @@ public class Temp {
 //        for (String s : subarray) {
 //            System.out.print(s);
 //        }
-        solution.getKthMagicNumber(9);
+        solution.longestWord(new String[]{"cat", "banana", "dog", "nana", "walk", "walker", "dogwalker"});
         System.out.println();
     }
 }
