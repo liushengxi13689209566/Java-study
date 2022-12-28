@@ -26,6 +26,8 @@ https://leetcode.cn/problems/longest-word-lcci/description/?languageTags=java
 # 思路：
 https://leetcode.cn/problems/longest-word-lcci/solutions/901541/setzi-dian-shu-zu-pai-xu-su-du-93bao-mu-hewl7/?languageTags=java
 
+【阿飞算法】面试题 17.15. 最长单词（回溯/动态规划/字典树）
+https://leetcode.cn/problems/longest-word-lcci/solutions/811199/a-fei-suan-fa-mian-shi-ti-1715-zui-chang-c3vr/?languageTags=java
 set字典+数组排序，速度93%，保姆式讲解
 解题思路
 思路很简单，先把字符串数组按字符串长度进行排序，如果长度相同按字符串的字典序进行倒序
