@@ -4,41 +4,47 @@ import java.util.*;
 
 public class Temp {
     static class Solution {
-        public String longestWord(String[] words) {
-            // 降序排序:先按照长度排序，长度相同时，按照字典序排序
-            Arrays.sort(words, ((a, b) -> a.length() == b.length() ? a.compareTo(b) : b.length() - a.length()));
-
-            Set<String> set = new HashSet<>();
-            for (String word : words) {
-                set.add(word);
+        public int[] shortestSeq(int[] big, int[] small) {
+            int bigLen = big.length;
+            if (big == null || bigLen <= 0) {
+                return new int[0];
             }
-
-            for (String word : words) {
-                //防止整个字符串与自身匹配返回true，且后续不会用到直接删除
-                set.remove(word);
-
-                // 递归判断是由那些单词组成
-                if (check(word, set)) {
-                    return word;
-                }
+            Set<Integer> smallSet = new HashSet<>();
+            for (int i = 0; i < small.length; i++) {
+                smallSet.add(small[i]);
             }
-            return "";
-        }
+            int left = 0;
+            int right = 0;
+            int[] retIndex = new int[2];
+            retIndex[0] = -1;
+            retIndex[1] = -1;
 
-        private boolean check(String word, Set<String> set) {
-            if (word.length() == 0) {
-                return true;
-            }
-            for (int i = 1; i <= word.length(); i++) {
-                // 0 ~ i-1
-                if (set.contains(word.substring(0, i))) {
-                    // i ~ word.length()-1
-                    if (check(word.substring(i), set)) {
-                        return true;
+            int minLen = Integer.MAX_VALUE;
+
+            Set<Integer> bigSet = new HashSet<>();
+
+            while (left <= right) {
+                if (bigSet.containsAll(smallSet)) {
+                    if (right - left + 1 < minLen) {
+                        minLen = right - left + 1;
+                        retIndex[0] = left;
+                        retIndex[1] = right - 1;
+                    }
+                    bigSet.remove(big[left]);
+                    left++;
+                } else {
+                    if (right < bigLen) {
+                        bigSet.add(big[right]);
+                        right++;
+                    } else {
+                        left++;
                     }
                 }
             }
-            return false;
+            if (retIndex[0] == -1  && retIndex[1] == -1 )
+                return new int[0];
+            else
+                return retIndex;
         }
     }
 
@@ -51,7 +57,9 @@ public class Temp {
 //        for (String s : subarray) {
 //            System.out.print(s);
 //        }
-        solution.longestWord(new String[]{"cat", "banana", "dog", "nana", "walk", "walker", "dogwalker"});
+//        solution.shortestSeq(new String[]{"cat", "banana", "dog", "nana", "walk", "walker", "dogwalker"});
+        System.out.println(solution.shortestSeq(new int[]{7, 5, 9, 0, 2, 1, 3, 5, 7, 9, 1, 1, 5, 8, 8, 9, 7}, new int[]{1, 5, 9}));
+        System.out.println(solution.shortestSeq(new int[]{1, 2, 3}, new int[]{1, 2, 3}));
         System.out.println();
     }
 }

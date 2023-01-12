@@ -55,8 +55,6 @@ W
 'algorithm/src/main/java/other/TTES.java,0/e/0efdad2b77c87fd1d1b5cdec3082c60946a674e9
 W
 'algorithm/src/main/java/sort/merge.java,0/7/0760386048687bec7902df4c41d19a5f70c7b9d3
-\
-,algorithm/src/main/java/leftRight/merge.java,3/8/38f58df9dbc6e086ec674a8e825fc0f5e8b9dd16
 j
 :algorithm/src/main/java/prefixAdd/findLongestSubarray.java,0/b/0b081f8940b99b68b12ed3658a730996b6279eb7
 a
@@ -65,3 +63,15 @@ a
 +algorithm/src/main/java/dp/maxSubArray.java,2/7/2738ae50f78c4f7a1c907efa1693ad2aafd94590
 _
 /algorithm/src/main/java/search/permutation.java,5/e/5ed3860c610c012f13ba2464fc85317b1a0265ca
+d
+4algorithm/src/main/java/leftRight/missingNumber.java,b/f/bf73d00fa115d4133e09add73a53b3a1ba7b4ac0
+Z
+*algorithm/src/main/java/tree/TreeNode.java,f/c/fc9c6f239a928682452d1ed67e439df469562e28
+\
+,algorithm/src/main/java/tree/isBalanced.java,5/a/5a92f1a40c211988dd6504349d3daff775a7d533
+a
+1algorithm/src/main/java/dp/getKthMagicNumber.java,5/8/58f08b2ba6da13d11c274bf624b6197842e0789b
+`
+0algorithm/src/main/java/other/nthUglyNumber.java,8/f/8f819967211f7bbe8a8ab1af92bc049bc02e58b9
+\
+,algorithm/src/main/java/str/longestWord.java,6/1/61e0342fa8631116d69943d45aa3259639df433c
