@@ -11,6 +11,28 @@ package binarySearch;
  */
 public class twoSum {
     class Solution {
+
+//        class Solution {
+//            public int[] twoSum(int[] price, int target) {
+//                if (price == null || price.length <= 0) {
+//                    return new int[0];
+//                }
+//                int i = 0;
+//                int j = price.length - 1;
+//
+//                while (i < j) {
+//                    if (price[i] + price[j] < target) {
+//                        i++;
+//                    } else if (price[i] + price[j] > target) {
+//                        j--;
+//                    } else {
+//                        return new int[]{price[i], price[j]};
+//                    }
+//                }
+//                return new int[0];
+//            }
+//        }
+
         public int[] twoSum(int[] numbers, int target) {
             if (numbers == null) {
                 return new int[0];

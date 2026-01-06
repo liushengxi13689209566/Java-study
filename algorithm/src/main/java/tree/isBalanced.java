@@ -88,5 +88,36 @@ public class isBalanced {
             }
             return Math.max(leftHeight, rightHeight) + 1;
         }
+
+        /**
+         * 同最大深度的问题
+         * https://www.bilibili.com/video/BV1KP411L7VH?spm_id_from=333.788.player.switch&vd_source=15c95ececbffc4766ecf0c5baabd1e64&p=58
+         */
+//        class Solution {
+//            public boolean isBalanced(TreeNode root) {
+//                if (root == null) {
+//                    return true;
+//                }
+//                return deep(root) > 0;
+//            }
+//
+//            int deep(TreeNode root) {
+//                if (root == null) {
+//                    return 0;
+//                }
+//                int leftHigh = deep(root.left);
+//                if (leftHigh == -1) {
+//                    return -1;
+//                }
+//                int rightHigh = deep(root.right);
+//                if (rightHigh == -1) {
+//                    return -1;
+//                }
+//                if (Math.abs(leftHigh - rightHigh) > 1) {
+//                    return -1;
+//                }
+//                return Math.max(leftHigh, rightHigh) + 1;
+//            }
+//        }
     }
 }
