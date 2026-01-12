@@ -222,7 +222,7 @@ public class CurrencyConverter {
         );
 
         System.out.println("汇率查询结果:");
-        System.out.println("=".repeat(50));
+//        System.out.println("=".repeat(50));
 
         for (String[] testCase : testCases) {
             String fromCurrency = testCase[0];

@@ -21,10 +21,10 @@ public class GenericPriorityTaskQueue<T> {
     }
 
     private void processStart() {
-        while (runCount.get() < maxSize && !taskQueue.isEmpty()) {
-            Task<T> task = taskQueue.poll();
-            if(task != null){
-            }
-        }
+//        while (runCount.get() < maxSize && !taskQueue.isEmpty()) {
+//            Task<T> task = taskQueue.poll();
+//            if(task != null){
+//            }
+    }
 
 }

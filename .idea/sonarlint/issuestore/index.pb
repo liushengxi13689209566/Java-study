@@ -32,8 +32,6 @@ _
 ]
 -algorithm/src/main/java/other/KthLargest.java,b/0/b010c325509bf3b5478049e818f4e9c2cf8b85c3
 V
-&algorithm/src/main/java/other/LCA.java,5/8/584f3e4d625d27dccc121ace439c83776c0c29e6
-V
 &algorithm/src/main/java/other/LCS.java,6/b/6b5fc12417b8f4ca634038907e6241cc8dbeb645
 b
 2algorithm/src/main/java/other/majorityElement.java,2/c/2c50db265c8d9a38d0297906e43f284ec86b860e
@@ -171,3 +169,5 @@ f
 6algorithm/src/main/java/leftRight/fileCombination.java,4/8/48d31cc70a8e99c06a6e92d3b73b35d3abd50fbc
 `
 0algorithm/src/main/java/tree/calculateDepth.java,5/a/5aca58d5ea3ea9dcabb97c491316f16d1ffdab01
+e
+5algorithm/src/main/java/hashmap/CheckPermutation.java,0/4/0410f1ffcee7e074ac6ce9c8fd6a1835d763d499

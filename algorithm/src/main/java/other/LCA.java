@@ -1,3 +1,5 @@
+//package other;
+//
 //import javax.swing.tree.TreeNode;
 //
 ///**
@@ -6,6 +8,19 @@
 // * @Description:
 // */
 //public class LCA {
+//    class Solution {
+//        public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+//            if (root == null || p == root || q == root) {
+//                return root;
+//            }
+//            TreeNode left_lca = lowestCommonAncestor(root.left, p, q);
+//            TreeNode right_lca = lowestCommonAncestor(root.right, p, q);
+//            if (left_lca != null && right_lca != null) {
+//                return root;
+//            }
+//            return left_lca != null ? left_lca : right_lca;
+//        }
+//    }
 //}
 //
 ///**
@@ -18,16 +33,4 @@
 // * }
 // */
 //
-//class Solution {
-//    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-//        if (root == null || p == root || q == root) {
-//            return root;
-//        }
-//        TreeNode left_lca = lowestCommonAncestor(root.left, p, q);
-//        TreeNode right_lca = lowestCommonAncestor(root.right, p, q);
-//        if (left_lca != null && right_lca != null) {
-//            return root;
-//        }
-//        return left_lca != null ? left_lca : right_lca;
-//    }
-//}
+//
