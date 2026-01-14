@@ -57,5 +57,40 @@ public class minimumTotal {
             }
             return triangle.get(0).get(0);
         }
+        // 不修改输入值 的 实现
+/*状态定义：dp[j] = “从当前行第 j 列出发，到达底边的最小路径和”。
+
+状态转移：dp[j] = 当前节点值 + min(下一层左子路径和, 下一层右子路径和)。
+
+初始化：dp 初始化为三角形最后一行。
+
+计算顺序：从下往上，从左往右。
+
+最终答案：递推结束后，dp[0] 即为所求。 */
+//        public int minimumTotal(List<List<Integer>> triangle) {
+//            if (triangle == null || triangle.size() == 0) {
+//                return 0;
+//            }
+//
+//            int n = triangle.size();
+//            // dp数组：表示从当前行的每个位置到底部的最小路径和
+//            // 初始化为最后一行
+//            int[] dp = new int[n];
+//            for (int i = 0; i < n; i++) {
+//                dp[i] = triangle.get(n - 1).get(i);
+//            }
+//
+//            // 从倒数第二行开始向上递推
+//            for (int i = n - 2; i >= 0; i--) {
+//                // 遍历当前行的每个元素
+//                for (int j = 0; j <= i; j++) {
+//                    // 状态转移方程：
+//                    // dp[j] = 当前值 + min(下一行同位置j, 下一行下一位置j+1)
+//                    dp[j] = triangle.get(i).get(j) + Math.min(dp[j], dp[j + 1]);
+//                }
+//            }
+//
+//            return dp[0];
+//        }
     }
 }
